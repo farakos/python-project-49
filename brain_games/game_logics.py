@@ -1,7 +1,12 @@
 import prompt
 
 
-def run_game(name, task, get_question, get_question_phrase, get_correct_answer):
+def run_game(task, get_question):
+    from brain_games import welcome
+
+    welcome.print_intro()
+    name = welcome.get_name()
+    welcome.welcome_user(name)
     print(task)
 
     answer_count = 0
@@ -9,9 +14,9 @@ def run_game(name, task, get_question, get_question_phrase, get_correct_answer):
 
     while answer_count < counts_to_win:
         question = get_question()
-        print(f'Question: {get_question_phrase(question)}')
+        print(f'Question: {question[0]}')
         answer = prompt.string('Your answer: ')
-        correct_answer = get_correct_answer(question)
+        correct_answer = question[1]
         if answer == correct_answer:
             print('Correct!')
             answer_count += 1

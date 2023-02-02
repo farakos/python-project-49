@@ -4,14 +4,10 @@ task = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def get_question():
-    return random.randint(0, 99)
+    number = random.randint(0, 99)
 
-
-def get_question_phrase(question):
-    return question
-
-
-def get_correct_answer(number):
     if number % 2 == 0:
-        return 'yes'
-    return 'no'
+        is_even = 'yes'
+    else:
+        is_even = 'no'
+    return (number, is_even)

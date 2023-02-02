@@ -16,12 +16,4 @@ def get_question():
     hide_index = random.randint(0, progression_len - 1)
     missing_number = progression[hide_index]
     progression[hide_index] = '..'
-    return (progression, missing_number)
-
-
-def get_question_phrase(question):
-    return ' '.join(question[0])
-
-
-def get_correct_answer(question):
-    return question[1]
+    return (' '.join(progression), missing_number)
