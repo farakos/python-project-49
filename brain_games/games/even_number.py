@@ -1,6 +1,6 @@
 import random
 
-rules = 'Answer "yes" if the number is even, otherwise answer "no".'
+task = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def get_question():

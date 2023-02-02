@@ -1,6 +1,6 @@
 import random
 
-rules = 'What is the result of the expression?'
+task = 'What is the result of the expression?'
 
 
 def get_question():

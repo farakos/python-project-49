@@ -1,8 +1,8 @@
 import prompt
 
 
-def run_game(name, rules, get_question, get_correct_answer):
-    print(rules)
+def run_game(name, task, get_question, get_correct_answer):
+    print(task)
 
     answer_count = 0
     counts_to_win = 3
