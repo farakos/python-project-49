@@ -5,7 +5,7 @@ rules = 'What is the result of the expression?'
 
 def get_question():
     operations = ['+', '*']
-    return f'{random.randint(0, 20)} {random.choice(operations)} {random.randint(0, 20)}'
+    return f'{random.randint(0, 10)} {random.choice(operations)} {random.randint(0, 10)}'
 
 
 def get_correct_answer(expression):
