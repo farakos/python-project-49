@@ -16,4 +16,3 @@ def get_correct_answer(number):
         if number % x == 0:
             return 'no'
     return 'yes'
-
