@@ -1,22 +1,17 @@
-def ask_number(name):
-    import random
-    import prompt
+import prompt
 
-    def is_even(number):
-        if number % 2 == 0:
-            return 'yes'
-        return 'no'
 
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+def run_game(name, rules, get_question, get_correct_answer):
+    print(rules)
 
     answer_count = 0
+    counts_to_win = 3
 
-    while answer_count < 3:
-        number = random.randint(0, 100)
-
-        print(f'Question: {number}')
+    while answer_count < counts_to_win:
+        question = get_question()
+        print(f'Question: {question}')
         answer = prompt.string('Your answer: ')
-        correct_answer = is_even(number)
+        correct_answer = get_correct_answer(question)
         if answer == correct_answer:
             print('Correct!')
             answer_count += 1

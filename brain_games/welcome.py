@@ -1,5 +1,11 @@
+import prompt
+
+
+def print_intro():
+    print('Welcome to the Brain Games!')
+
+
 def get_name():
-    import prompt
     name = prompt.string('May I have your name? ')
     return name
 
