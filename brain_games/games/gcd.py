@@ -1,6 +1,6 @@
 import random
 
-task = 'What is the result of the expression?'
+task = 'Find the greatest common divisor of given numbers.'
 
 
 def get_question():
