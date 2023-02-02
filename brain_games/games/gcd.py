@@ -7,6 +7,10 @@ def get_question():
     return (random.randint(1, 99), random.randint(1, 99))
 
 
+def get_question_phrase(question):
+    return f'{question[0]} {question[1]}'
+
+
 def get_correct_answer(numbers):
     min_number = min(numbers[0], numbers[1])
     max_number = max(numbers[0], numbers[1])
@@ -16,6 +20,3 @@ def get_correct_answer(numbers):
         if (min_number % x == 0) and (max_number % x == 0):
             result = x
     return str(result)
-
-question = get_question()
-print(f'{question}, GCD={get_correct_answer(question)}')

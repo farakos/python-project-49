@@ -10,6 +10,10 @@ def get_question():
            f'{random.randint(0, 10)}'
 
 
+def get_question_phrase(question):
+    return question
+
+
 def get_correct_answer(expression):
     operands = expression.split()
 

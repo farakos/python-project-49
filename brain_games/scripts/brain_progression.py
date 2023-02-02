@@ -2,10 +2,10 @@
 
 from brain_games import welcome
 from brain_games import game_logics
-from brain_games.games.calc import task
-from brain_games.games.calc import get_question
-from brain_games.games.calc import get_question_phrase
-from brain_games.games.calc import get_correct_answer
+from brain_games.games.progression import task
+from brain_games.games.progression import get_question
+from brain_games.games.progression import get_question_phrase
+from brain_games.games.progression import get_correct_answer
 
 
 def main():

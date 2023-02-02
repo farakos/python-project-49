@@ -1,7 +1,7 @@
 import prompt
 
 
-def run_game(name, task, get_question, get_correct_answer):
+def run_game(name, task, get_question, get_question_phrase, get_correct_answer):
     print(task)
 
     answer_count = 0
@@ -9,7 +9,7 @@ def run_game(name, task, get_question, get_correct_answer):
 
     while answer_count < counts_to_win:
         question = get_question()
-        print(f'Question: {question}')
+        print(f'Question: {get_question_phrase(question)}')
         answer = prompt.string('Your answer: ')
         correct_answer = get_correct_answer(question)
         if answer == correct_answer:

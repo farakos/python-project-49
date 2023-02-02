@@ -7,6 +7,10 @@ def get_question():
     return random.randint(0, 99)
 
 
+def get_question_phrase(question):
+    return question
+
+
 def get_correct_answer(number):
     if number % 2 == 0:
         return 'yes'
